@@ -1,4 +1,6 @@
 import React from "react";
+
+// https://react-icons.github.io/react-icons/icons/fa/
 import {
   FaPhoneAlt,
   FaEnvelope,

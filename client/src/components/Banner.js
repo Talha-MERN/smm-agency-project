@@ -3,10 +3,10 @@ import BannerImage from "../images/banner-image.png";
 
 const Banner = () => {
   return (
-    <section className="bg-gradient-to-r from-customBlue to-customPink text-white h-[85vh] flex items-center w-full">
+    <section className="bg-gradient-to-r from-customBlue to-customPink text-white min-h-screen md:min-h-[85vh] flex items-center w-full">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-6 lg:px-12">
         {/* Left Content */}
-        <div className="text-center md:text-left max-w-lg space-y-6">
+        <div className="text-center md:text-left max-w-lg space-y-6 md:space-y-6">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
             Empowering Your Brand with Cutting-Edge Marketing Solutions
           </h1>
