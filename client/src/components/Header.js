@@ -241,7 +241,7 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 import React, { useState } from "react";
-import { Link as ScrollLink } from "react-scroll";
+// import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink, useNavigate } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
 
