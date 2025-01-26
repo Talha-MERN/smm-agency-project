@@ -4,7 +4,7 @@ import Layout from "./components/Layout"; // Adjust path as needed
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/About";
 import ServicesPage from "./pages/Services";
-import PortfolioPage from "./pages/Portfolio";
+import PackagesPage from "./pages/Packages";
 import ContactPage from "./pages/Contact";
 
 const router = createHashRouter([
@@ -25,8 +25,8 @@ const router = createHashRouter([
         element: <ServicesPage />,
       },
       {
-        path: "portfolio", // Services page
-        element: <PortfolioPage />,
+        path: "packages", // Services page
+        element: <PackagesPage />,
       },
       {
         path: "contact", // Services page

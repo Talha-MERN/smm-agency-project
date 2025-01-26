@@ -68,11 +68,11 @@ const Footer = () => {
                 href="mailto:info@insighttech.com"
                 className="hover:text-customPink"
               >
-                info@insighttech.com
+                insighttechsolutionz@gmail.com
               </a>
             </p>
-            <p className="text-sm">Phone: +1 (123) 456-7890</p>
-            <p className="text-sm">Address: 123 Main Street, City, Country</p>
+            <p className="text-sm">Phone: +92 326 7374898</p>
+            <p className="text-sm">Address: Bahawalpur, Pakistan</p>
           </div>
 
           {/* Social Media Icons */}

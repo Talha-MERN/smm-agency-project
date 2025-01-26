@@ -1,10 +1,11 @@
 import React from "react";
+import "./../App.css";
+
 import Musa from "../images/team-members/Musa-Kaleem.png";
 import Talha from "../images/team-members/Talha-Akeel.jpg";
 import Ali from "../images/team-members/Ali-Azhar.png";
 import Ahmad from "../images/team-members/Ahmad-Azeem.png";
 import Sana from "../images/team-members/Sana-Taj.png";
-import "./../App.css"; // CSS for styling
 
 const Team = () => {
   const teamMembers = [
@@ -12,7 +13,11 @@ const Team = () => {
     { name: "Talha Akeel", role: "Web Developer", image: Talha },
     { name: "Ali Azhar", role: "Video Editor", image: Ali },
     { name: "Ahmad Azeem", role: "Social Media Manager", image: Ahmad },
-    { name: "Sana Taj", role: "Wordpress Developer & QA", image: Sana },
+    {
+      name: "Sana Taj",
+      role: "Wordpress Developer & Software Quality Assurance Engineer",
+      image: Sana,
+    },
   ];
 
   return (

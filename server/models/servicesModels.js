@@ -12,7 +12,7 @@ const serviceSchema = new Schema(
       required: true,
     },
   },
-  { timestamps: true } // Adds createdAt and updatedAt fields
+  { timestamps: true }
 );
 
 module.exports = model("Service", serviceSchema, "services");

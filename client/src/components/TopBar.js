@@ -30,13 +30,13 @@ const TopBar = () => {
         {/* Phone */}
         <div className="flex items-center space-x-2">
           <FaPhoneAlt />
-          <span>+92 316 4641190</span>
+          <span>+92 326 7374898</span>
         </div>
 
         {/* Social Media */}
         <div className="flex items-center space-x-4">
           <a
-            href="https://web.facebook.com/profile.php?id=61570423380061"
+            href="https://web.facebook.com/profile.php?id=61570313922667"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -54,7 +54,7 @@ const TopBar = () => {
             </span>
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/insighttechsolutions123/"
             target="_blank"
             rel="noopener noreferrer"
           >
