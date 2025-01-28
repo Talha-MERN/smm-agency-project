@@ -1,6 +1,8 @@
 import React from "react";
 import { useFormik } from "formik";
 import { contactSchema } from "./../schemas";
+import axios from "axios";
+import { contactEndpoints } from "./../api/endpoints/contactEndpoints";
 
 const initialValues = {
   companyName: "",
@@ -15,10 +17,30 @@ const Contact = () => {
     useFormik({
       initialValues,
       validationSchema: contactSchema,
-      onSubmit: (values, action) => {
-        console.log(values);
-        action.resetForm();
-        alert("Your query has been submitted.");
+      onSubmit: async (values, action) => {
+        try {
+          const response = await axios.post(
+            contactEndpoints.contactService(),
+            {
+              companyName: values.companyName,
+              fullName: values.fullName,
+              email: values.email,
+              phone: values.phone,
+              yourMessage: values.yourMessage,
+            },
+            {
+              headers: {
+                "Content-Type": "multipart/form-data",
+              },
+              withCredentials: true,
+            }
+          );
+          action.resetForm();
+          alert("Your query has been submitted.");
+          console.log(response);
+        } catch (error) {
+          console.log("abc");
+        }
       },
     });
 
@@ -125,17 +147,16 @@ const Contact = () => {
 
             {/* Your Message input */}
             <div className="input-block">
-              <input
-                type="text"
-                autoComplete="off"
+              <textarea
                 name="yourMessage"
                 id="yourMessage"
                 placeholder="Please write your message here ..."
                 value={values.yourMessage}
                 onChange={handleChange}
                 onBlur={handleBlur}
-                className="border border-gray-300 w-full px-4 py-3 rounded-lg focus:ring-2 focus:ring-customBlue focus:outline-none"
-              />
+                className="border border-gray-300 w-full px-4 py-3 rounded-lg focus:ring-2 focus:ring-customBlue focus:outline-none resize-none"
+                rows="5" // Adjust the number of rows as needed
+              ></textarea>
               {errors.yourMessage && touched.yourMessage ? (
                 <p className="form-error">{errors.yourMessage}</p>
               ) : null}
