@@ -5,7 +5,8 @@ import Musa from "../images/team-members/Musa-Kaleem.png";
 import Talha from "../images/team-members/Talha-Akeel.jpg";
 import Ali from "../images/team-members/Ali-Azhar.png";
 import Ahmad from "../images/team-members/Ahmad-Azeem.png";
-import Sana from "../images/team-members/Sana-Taj.png";
+import Sana from "../images/team-members/woman.png";
+// import FemaleAvatar from "../images/team-members/woman.png";
 
 const Team = () => {
   const teamMembers = [

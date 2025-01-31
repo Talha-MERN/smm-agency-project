@@ -68,10 +68,10 @@ const Header = () => {
 
         {/* Right Side: Free Consultation Button */}
         <a
-          href="https://wa.me/+923164641190"
+          href="https://wa.me/+923267374898"
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:flex bg-customPink text-white px-4 py-2 rounded-lg items-center space-x-2 hover:bg-opacity-90 transition"
+          className="hidden md:flex bg-green-500 text-white px-4 py-2 rounded-lg items-center space-x-2 hover:bg-opacity-90 transition"
         >
           <FaWhatsapp className="text-lg" />
           <span>Free Consultation</span>
@@ -121,7 +121,7 @@ const Header = () => {
               href="https://wa.me/+923164641190"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-customPink text-white px-4 py-2 rounded-lg flex items-center space-x-2 hover:bg-opacity-90 transition"
+              className="bg-green-500 text-white px-4 py-2 rounded-lg flex items-center space-x-2 hover:bg-opacity-90 transition"
             >
               <FaWhatsapp className="text-lg" />
               <span>Free Consultation</span>
