@@ -29,7 +29,7 @@ const router = createHashRouter([
         element: <PackagesPage />,
       },
       {
-        path: "contact",
+        path: "contact-us",
         element: <ContactPage />,
       },
     ],

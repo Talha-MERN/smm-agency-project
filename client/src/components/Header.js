@@ -28,21 +28,33 @@ const Header = () => {
 
         {/* Center: Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
-          <a href="#" className="text-white hover:text-opacity-80">
+          <RouterLink to="/" className="text-white hover:text-opacity-80">
             Home
-          </a>
-          <a href="#about-us" className="text-white hover:text-opacity-80">
+          </RouterLink>
+          <RouterLink
+            to="/about-us"
+            className="text-white hover:text-opacity-80"
+          >
             About Us
-          </a>
-          <a href="#services" className="text-white hover:text-opacity-80">
+          </RouterLink>
+          <RouterLink
+            to="/services"
+            className="text-white hover:text-opacity-80"
+          >
             Services
-          </a>
-          <a href="#packages" className="text-white hover:text-opacity-80">
+          </RouterLink>
+          <RouterLink
+            to="/packages"
+            className="text-white hover:text-opacity-80"
+          >
             Packages
-          </a>
-          <a href="#contact" className="text-white hover:text-opacity-80">
+          </RouterLink>
+          <RouterLink
+            to="/contact-us"
+            className="text-white hover:text-opacity-80"
+          >
             Contact Us
-          </a>
+          </RouterLink>
         </nav>
 
         {/* Right Side: Free Consultation Button */}
@@ -69,37 +81,41 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-customBlue text-white">
           <nav className="flex flex-col items-center space-y-4 py-4">
-            <a href="#" className="hover:text-opacity-80" onClick={closeMenu}>
+            <RouterLink
+              to="/"
+              className="hover:text-opacity-80"
+              onClick={closeMenu}
+            >
               Home
-            </a>
-            <a
-              href="#about-us"
+            </RouterLink>
+            <RouterLink
+              to="/about-us"
               className="hover:text-opacity-80"
               onClick={closeMenu}
             >
               About Us
-            </a>
-            <a
-              href="#services"
+            </RouterLink>
+            <RouterLink
+              to="/services"
               className="hover:text-opacity-80"
               onClick={closeMenu}
             >
               Services
-            </a>
-            <a
-              href="#packages"
+            </RouterLink>
+            <RouterLink
+              to="/packages"
               className="hover:text-opacity-80"
               onClick={closeMenu}
             >
               Packages
-            </a>
-            <a
-              href="#contact"
+            </RouterLink>
+            <RouterLink
+              to="/contact-us"
               className="hover:text-opacity-80"
               onClick={closeMenu}
             >
               Contact Us
-            </a>
+            </RouterLink>
             <a
               href="https://wa.me/+923267374898"
               target="_blank"
