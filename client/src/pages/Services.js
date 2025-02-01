@@ -1,10 +1,10 @@
 import React from "react";
+import ServicesPageContent from "../components/Services";
 
 const Services = () => {
   return (
     <div>
-      <h1>Services Page</h1>
-      <p>This is an services page.</p>
+      <ServicesPageContent />
     </div>
   );
 };

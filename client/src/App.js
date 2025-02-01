@@ -1,8 +1,8 @@
 import React from "react";
 import { createHashRouter, RouterProvider } from "react-router-dom";
-import Layout from "./components/Layout"; // Adjust path as needed
+import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/About";
+import AboutUsPage from "./pages/AboutUs";
 import ServicesPage from "./pages/Services";
 import PackagesPage from "./pages/Packages";
 import ContactPage from "./pages/Contact";
@@ -10,29 +10,28 @@ import ContactPage from "./pages/Contact";
 const router = createHashRouter([
   {
     path: "/",
-    element: <Layout />, // Apply Layout with TopBar and Header
+    element: <Layout />,
     children: [
       {
-        path: "/", // Home route
+        path: "/",
         element: <HomePage />,
       },
       {
-        path: "about", // About Us page
-        element: <AboutPage />,
+        path: "/about-us",
+        element: <AboutUsPage />,
       },
       {
-        path: "services", // Services page
+        path: "/services",
         element: <ServicesPage />,
       },
       {
-        path: "packages", // Services page
+        path: "packages",
         element: <PackagesPage />,
       },
       {
-        path: "contact", // Services page
+        path: "contact",
         element: <ContactPage />,
       },
-      // Add more child routes as needed
     ],
   },
 ]);

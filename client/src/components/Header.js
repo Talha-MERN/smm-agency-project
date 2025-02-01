@@ -1,32 +1,23 @@
 import React, { useState } from "react";
-import { Link as RouterLink, useNavigate } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const navigate = useNavigate();
-
-  const handleNavigateAndScroll = (path, target) => {
-    if (window.location.pathname !== path) {
-      navigate(path);
-      setTimeout(() => {
-        document.getElementById(target)?.scrollIntoView({ behavior: "smooth" });
-      }, 100); // Ensure the page has loaded before scrolling
-    } else {
-      document.getElementById(target)?.scrollIntoView({ behavior: "smooth" });
-    }
-    setIsMenuOpen(false);
-  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
   };
 
   return (
     <header className="bg-customBlue shadow-md">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Left Side: Logo/Text */}
-        <RouterLink to="/" className="text-left">
+        <RouterLink to="/" className="text-left" onClick={closeMenu}>
           <h1 className="text-2xl font-bold text-gray-800">
             <span className="block text-4xl text-white">Insight Tech</span>
             <span className="block text-lg text-customPink text-center">
@@ -37,27 +28,15 @@ const Header = () => {
 
         {/* Center: Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
-          <RouterLink
-            to="/"
-            onClick={() => handleNavigateAndScroll("/", "home")}
-            className="text-white cursor-pointer hover:text-opacity-80"
-          >
+          <a href="#" className="text-white hover:text-opacity-80">
             Home
-          </RouterLink>
-          <RouterLink
-            to="/"
-            onClick={() => handleNavigateAndScroll("/", "services-section")}
-            className="text-white cursor-pointer hover:text-opacity-80"
-          >
-            Services
-          </RouterLink>
-          <RouterLink
-            to="/"
-            onClick={() => handleNavigateAndScroll("/", "about-us")}
-            className="text-white cursor-pointer hover:text-opacity-80"
-          >
+          </a>
+          <a href="#about-us" className="text-white hover:text-opacity-80">
             About Us
-          </RouterLink>
+          </a>
+          <a href="#services" className="text-white hover:text-opacity-80">
+            Services
+          </a>
           <a href="#packages" className="text-white hover:text-opacity-80">
             Packages
           </a>
@@ -90,38 +69,43 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-customBlue text-white">
           <nav className="flex flex-col items-center space-y-4 py-4">
-            <RouterLink
-              to="/"
-              onClick={() => handleNavigateAndScroll("/", "home")}
-              className="hover:text-opacity-80"
-            >
+            <a href="#" className="hover:text-opacity-80" onClick={closeMenu}>
               Home
-            </RouterLink>
-            <RouterLink
-              to="/"
-              onClick={() => handleNavigateAndScroll("/", "services-section")}
+            </a>
+            <a
+              href="#about-us"
               className="hover:text-opacity-80"
-            >
-              Services
-            </RouterLink>
-            <RouterLink
-              to="/"
-              onClick={() => handleNavigateAndScroll("/", "about-us")}
-              className="hover:text-opacity-80"
+              onClick={closeMenu}
             >
               About Us
-            </RouterLink>
-            <a href="#packages" className="hover:text-opacity-80">
+            </a>
+            <a
+              href="#services"
+              className="hover:text-opacity-80"
+              onClick={closeMenu}
+            >
+              Services
+            </a>
+            <a
+              href="#packages"
+              className="hover:text-opacity-80"
+              onClick={closeMenu}
+            >
               Packages
             </a>
-            <a href="#contact" className="hover:text-opacity-80">
+            <a
+              href="#contact"
+              className="hover:text-opacity-80"
+              onClick={closeMenu}
+            >
               Contact Us
             </a>
             <a
-              href="https://wa.me/+923164641190"
+              href="https://wa.me/+923267374898"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-500 text-white px-4 py-2 rounded-lg flex items-center space-x-2 hover:bg-opacity-90 transition"
+              onClick={closeMenu}
             >
               <FaWhatsapp className="text-lg" />
               <span>Free Consultation</span>
