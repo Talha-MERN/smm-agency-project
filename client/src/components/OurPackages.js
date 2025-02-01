@@ -28,7 +28,7 @@ const packages = [
       "Monthly Report",
       "24/7 Support",
     ],
-    buttonText: "Choose Growth",
+    buttonText: "Get Started",
     bgColor: "bg-customBlue",
   },
   {
@@ -43,7 +43,7 @@ const packages = [
       "Monthly Report",
       "24/7 Support",
     ],
-    buttonText: "Go Premium",
+    buttonText: "Get Started",
     bgColor: "bg-customPink",
   },
 ];
