@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-customBlue shadow-md">
+    <header className="bg-gradient-to-r from-customBlue to-customPink shadow-md">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Left Side: Logo/Text */}
         <RouterLink to="/" className="text-left" onClick={closeMenu}>
@@ -62,10 +62,10 @@ const Header = () => {
           href="https://wa.me/+923267374898"
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:flex bg-green-500 text-white px-4 py-2 rounded-lg items-center space-x-2 hover:bg-opacity-90 transition"
+          className="hidden md:flex bg-customBlue border border-transparent text-white px-4 py-2 rounded-lg items-center space-x-2 transition hover:bg-transparent hover:border hover:border-white"
         >
-          <FaWhatsapp className="text-lg" />
-          <span>Free Consultation</span>
+          <FaWhatsapp className="text-2xl" />
+          <span className="text-xl">Free Consultation</span>
         </a>
 
         {/* Mobile Menu: Hamburger Icon */}

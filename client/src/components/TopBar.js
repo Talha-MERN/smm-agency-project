@@ -13,7 +13,7 @@ import {
 
 const TopBar = () => {
   return (
-    <div className="bg-customPink text-white py-2 hidden md:block">
+    <div className="bg-customBlue text-white py-2 hidden md:block">
       <div className="container mx-auto flex items-center justify-between px-6 space-y-2 md:space-y-0">
         {/* Address */}
         <div className="flex items-center space-x-2">
