@@ -4,6 +4,7 @@ import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
 import AboutUsPage from "./pages/AboutUs";
 import ServicesPage from "./pages/Services";
+import ServiceDetail from "./pages/ServiceDetail";
 import PackagesPage from "./pages/Packages";
 import ContactPage from "./pages/Contact";
 
@@ -23,6 +24,10 @@ const router = createHashRouter([
       {
         path: "/services",
         element: <ServicesPage />,
+      },
+      {
+        path: "/services/:serviceId",
+        element: <ServiceDetail />,
       },
       {
         path: "packages",

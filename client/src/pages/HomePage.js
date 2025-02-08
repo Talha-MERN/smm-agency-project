@@ -4,6 +4,7 @@ import AboutUsSummary from "../components/AboutUsSummary";
 import ServicesList from "../components/ServicesList";
 import Team from "../components/Team";
 import FAQs from "../components/FAQs";
+import Team2 from "../components/Team-2";
 
 const HomePage = () => {
   return (
@@ -11,8 +12,9 @@ const HomePage = () => {
       <Banner />
       <AboutUsSummary />
       <ServicesList />
-      <Team />
+      <Team2 />
       <FAQs />
+      {/* <Team /> */}
       <hr></hr>
     </div>
   );

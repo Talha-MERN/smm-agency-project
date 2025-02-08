@@ -24,8 +24,6 @@ app.use(cors(corsOptions));
 app.use(cookieParser());
 
 // Routes
-const servicesRoutes = require("./routes/servicesRoutes");
-app.use("/api/v1/services", servicesRoutes);
 
 const contactRoutes = require("./routes/contactRoutes");
 app.use("/api/v1/contact", contactRoutes);
