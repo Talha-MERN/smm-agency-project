@@ -2,7 +2,7 @@ import React from "react";
 import Banner from "../components/Banner";
 import AboutUsSummary from "../components/AboutUsSummary";
 import ServicesList from "../components/ServicesList";
-import Team from "../components/Team";
+// import Team from "../components/Team";
 import FAQs from "../components/FAQs";
 import Team2 from "../components/Team-2";
 
