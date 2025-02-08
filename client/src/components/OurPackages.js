@@ -3,7 +3,7 @@ import React from "react";
 const packages = [
   {
     title: "Basic Package",
-    price: "Rs:10,000/month",
+    price: "Rs:12,000/month",
     features: [
       "Accounts Setup/Branding",
       "Accounts Management (Meta)",
@@ -18,7 +18,7 @@ const packages = [
   },
   {
     title: "Standard Package",
-    price: "Rs:15,000/month",
+    price: "Rs:18,000/month",
     features: [
       "Accounts Setup/Branding",
       "Accounts Management (Meta)",
@@ -33,7 +33,7 @@ const packages = [
   },
   {
     title: "Premium Package",
-    price: "Rs:20,000/month",
+    price: "Rs:25,000/month",
     features: [
       "Accounts Setup/Branding",
       "Accounts Management (Meta)",
