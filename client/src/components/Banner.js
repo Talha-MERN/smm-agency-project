@@ -32,7 +32,7 @@ const Banner = () => {
           </p>
           <div className="flex justify-center md:justify-start space-x-4">
             <a
-              href="#get-started"
+              href="#contact-us"
               className="bg-white text-customBlue px-6 py-3 font-semibold rounded-lg shadow hover:bg-opacity-90 transition"
             >
               Get Started

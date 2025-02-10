@@ -40,7 +40,7 @@ const TopBar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="hover:text-customBlue transition-colors">
+            <span className="hover:text-customPink transition-colors">
               <FaFacebook />
             </span>
           </a>
@@ -49,7 +49,7 @@ const TopBar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="hover:text-customBlue transition-colors">
+            <span className="hover:text-customPink transition-colors">
               <FaYoutube />
             </span>
           </a>
@@ -58,7 +58,7 @@ const TopBar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="hover:text-customBlue transition-colors">
+            <span className="hover:text-customPink transition-colors">
               <FaInstagram />
             </span>
           </a>
@@ -67,7 +67,7 @@ const TopBar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="hover:text-customBlue transition-colors">
+            <span className="hover:text-customPink transition-colors">
               <FaLinkedin />
             </span>
           </a>

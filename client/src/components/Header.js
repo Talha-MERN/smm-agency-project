@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Link as RouterLink } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,44 +17,63 @@ const Header = () => {
     <header className="bg-gradient-to-r from-customBlue to-customPink shadow-md">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Left Side: Logo/Text */}
-        <RouterLink to="/" className="text-left" onClick={closeMenu}>
+        <NavLink to="/" className="text-left" onClick={closeMenu}>
           <h1 className="text-2xl font-bold text-gray-800">
             <span className="block text-4xl text-white">Insight Tech</span>
             <span className="block text-lg text-customPink text-center">
               Solutions
             </span>
           </h1>
-        </RouterLink>
+        </NavLink>
 
         {/* Center: Navigation */}
+
         <nav className="hidden md:flex items-center space-x-6">
-          <RouterLink to="/" className="text-white hover:text-opacity-80">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `text-white hover:text-opacity-80 transition-all duration-200 ${isActive ? "text-xl font-semibold text-[#FFD700]" : ""
+              }`
+            }
+          >
             Home
-          </RouterLink>
-          <RouterLink
+          </NavLink>
+          <NavLink
             to="/about-us"
-            className="text-white hover:text-opacity-80"
+            className={({ isActive }) =>
+              `text-white hover:text-opacity-80 transition-all duration-200 ${isActive ? "text-xl font-semibold text-[#FFD700]" : ""
+              }`
+            }
           >
             About Us
-          </RouterLink>
-          <RouterLink
+          </NavLink>
+          <NavLink
             to="/services"
-            className="text-white hover:text-opacity-80"
+            className={({ isActive }) =>
+              `text-white hover:text-opacity-80 transition-all duration-200 ${isActive ? "text-xl font-semibold text-[#FFD700]" : ""
+              }`
+            }
           >
             Services
-          </RouterLink>
-          <RouterLink
+          </NavLink>
+          <NavLink
             to="/packages"
-            className="text-white hover:text-opacity-80"
+            className={({ isActive }) =>
+              `text-white hover:text-opacity-80 transition-all duration-200 ${isActive ? "text-xl font-semibold text-[#FFD700]" : ""
+              }`
+            }
           >
             Packages
-          </RouterLink>
-          <RouterLink
+          </NavLink>
+          <NavLink
             to="/contact-us"
-            className="text-white hover:text-opacity-80"
+            className={({ isActive }) =>
+              `text-white hover:text-opacity-80 transition-all duration-200 ${isActive ? "text-xl font-semibold text-[#FFD700]" : ""
+              }`
+            }
           >
             Contact Us
-          </RouterLink>
+          </NavLink>
         </nav>
 
         {/* Right Side: Free Consultation Button */}
@@ -81,41 +100,41 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-customBlue text-white">
           <nav className="flex flex-col items-center space-y-4 py-4">
-            <RouterLink
+            <NavLink
               to="/"
               className="hover:text-opacity-80"
               onClick={closeMenu}
             >
               Home
-            </RouterLink>
-            <RouterLink
+            </NavLink>
+            <NavLink
               to="/about-us"
               className="hover:text-opacity-80"
               onClick={closeMenu}
             >
               About Us
-            </RouterLink>
-            <RouterLink
+            </NavLink>
+            <NavLink
               to="/services"
               className="hover:text-opacity-80"
               onClick={closeMenu}
             >
               Services
-            </RouterLink>
-            <RouterLink
+            </NavLink>
+            <NavLink
               to="/packages"
               className="hover:text-opacity-80"
               onClick={closeMenu}
             >
               Packages
-            </RouterLink>
-            <RouterLink
+            </NavLink>
+            <NavLink
               to="/contact-us"
               className="hover:text-opacity-80"
               onClick={closeMenu}
             >
               Contact Us
-            </RouterLink>
+            </NavLink>
             <a
               href="https://wa.me/+923267374898"
               target="_blank"
