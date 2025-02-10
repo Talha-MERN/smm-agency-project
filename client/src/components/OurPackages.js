@@ -68,7 +68,7 @@ const OurPackages = () => {
               <ul className="mb-6 space-y-2">
                 {pkg.features.map((feature, i) => (
                   <li key={i} className="flex items-center space-x-2">
-                    <span className="text-green-200 font-semibold">✔</span>
+                    <span className="text-white font-semibold">✔</span>
                     <span>{feature}</span>
                   </li>
                 ))}
