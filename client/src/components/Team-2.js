@@ -15,6 +15,7 @@ import AhmadRasheed from "../images/team-members/Ahmad-Rasheed.png";
 import SanaTaj from "../images/team-members/woman.png";
 import HanzalaAkeel from "../images/team-members/Hanzala-Akeel.png";
 import WaqasIshfaq from "../images/team-members/Waqas-Ishfaq.png";
+import rahimAdnan from "../images/team-members/admin.jpg";
 
 const teamMembers = [
   { name: "Musa Kaleem", role: "Marketing Expert", image: Musa },
@@ -26,6 +27,11 @@ const teamMembers = [
     name: "Sana Taj",
     role: "WordPress Developer & Software Quality Assurance Engineer",
     image: SanaTaj,
+  },
+  {
+    name: "Hafiz Raahim Adnan",
+    role: "MERN-Stack Developer",
+    image: rahimAdnan,
   },
   { name: "Hanzala Akeel", role: "Video Editor", image: HanzalaAkeel },
   { name: "Waqas Ishfaq", role: "Video Editor", image: WaqasIshfaq },
