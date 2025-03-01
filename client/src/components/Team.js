@@ -6,6 +6,8 @@ import Talha from "../images/team-members/Talha-Akeel.jpg";
 import Ali from "../images/team-members/Ali-Azhar.png";
 import Ahmad from "../images/team-members/Ahmad-Azeem.png";
 import Sana from "../images/team-members/woman.png";
+import rahimAdnan from "../images/team-members/admin.jpg";
+
 // import FemaleAvatar from "../images/team-members/woman.png";
 
 const Team = () => {
@@ -18,6 +20,11 @@ const Team = () => {
       name: "Sana Taj",
       role: "Wordpress Developer & Software Quality Assurance Engineer",
       image: Sana,
+    },
+    {
+      name: "Hafiz Raahim Adnan",
+      role: "MERN-stack Developer",
+      image: rahimAdnan,
     },
   ];
 
